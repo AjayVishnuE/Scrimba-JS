@@ -1,5 +1,5 @@
-var num1 = parseFloat(document.getElementById("num1-el").value)
-var num2 = parseFloat(document.getElementById("num2-el").value)
+let num1 = parseFloat(document.getElementById("num1-el").value)
+let num2 = parseFloat(document.getElementById("num2-el").value)
 
 // Create four functions: add(), subtract(), divide(), multiply()
 // Call the correct function when the user clicks on one of the buttons
@@ -11,7 +11,10 @@ var num2 = parseFloat(document.getElementById("num2-el").value)
 let sumEl = document.getElementById("sum-el")
 
 function add() {
+    console.log(num1)
+    console.log(num2)
     let result = num1 + num2
+    console.log(result)
     sumEl.textContent = "Addition: " + result
 }
 
